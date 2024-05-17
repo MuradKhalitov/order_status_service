@@ -15,7 +15,8 @@ import java.time.Instant;
 public class OrderEventListener {
     private final KafkaTemplate<String, OrderStatusEvent> kafkaTemplate;
 
-    @KafkaListener(topics = "order-topic", groupId = "order-status-group")
+    @KafkaListener(topics = "order-topic", groupId = "order-status-group",
+            containerFactory = "kafkaListenerContainerFactory")
     public void listenOrderTopic(OrderEvent orderEvent) {
         log.info("order-status-service заказ: {} получен", orderEvent);
         String status = "CREATED";
