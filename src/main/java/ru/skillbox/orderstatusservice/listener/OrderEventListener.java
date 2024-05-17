@@ -1,11 +1,11 @@
-package ru.skillbox.orderservice.listener;
+package ru.skillbox.orderstatusservice.listener;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
-import ru.skillbox.orderservice.dto.OrderEvent;
-import ru.skillbox.orderservice.dto.OrderStatusEvent;
+import ru.skillbox.orderstatusservice.dto.OrderEvent;
+import ru.skillbox.orderstatusservice.dto.OrderStatusEvent;
 
 import java.time.Instant;
 

@@ -1,4 +1,4 @@
-package ru.skillbox.orderservice.dto;
+package ru.skillbox.orderstatusservice.dto;
 
 import lombok.Data;
 

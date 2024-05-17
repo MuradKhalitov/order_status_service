@@ -1,4 +1,4 @@
-package ru.skillbox.orderservice;
+package ru.skillbox.orderstatusservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

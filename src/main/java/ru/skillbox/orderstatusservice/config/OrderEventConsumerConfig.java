@@ -1,4 +1,4 @@
-package ru.skillbox.orderservice.config;
+package ru.skillbox.orderstatusservice.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -10,7 +10,7 @@ import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
-import ru.skillbox.orderservice.dto.OrderEvent;
+import ru.skillbox.orderstatusservice.dto.OrderEvent;
 
 import java.util.HashMap;
 import java.util.Map;
